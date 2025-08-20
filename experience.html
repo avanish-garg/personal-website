@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanish Garg | Experience</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Avanish Garg</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-brand">Avanish Garg</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html" class="active">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">&#9776;</div>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Professional Experience</h2>
-        <div class="card">
-            <h3>Software Engineer Intern &mdash; Parmar Academy</h3>
-            <p><em>Jan&nbsp;2024 &ndash; Dec&nbsp;2024, Indore, India</em></p>
-            <ul>
-                <li>Developed Logistic Regression and Random Forest models to predict student dropout risk, achieving over 80% accuracy.</li>
-                <li>Integrated predictive models into the learning platform, reducing dropout rates by 15% and enabling proactive interventions.</li>
-                <li>Preprocessed student data by handling missing values and encoding features; utilized SQL to query and aggregate data for analysis.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Founder &mdash; Rentora (NFT Rental Platform)</h3>
-            <p><em>Jan&nbsp;2023 &ndash; Feb&nbsp;2024, Indore / Remote</em></p>
-            <ul>
-                <li>Founded Rentora to explore trustless short‑term rentals using blockchain, focusing on both digital and physical assets.</li>
-                <li>Designed and implemented smart contracts to automate rental agreements and ensure transparency and security.</li>
-                <li>Drove product development from concept through deployment, balancing technical execution with user feedback and market fit.</li>
-                <li>Built responsive user interfaces and dashboards, prioritising security, ease of use and seamless rental management.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Developer Intern &mdash; Lifessentials</h3>
-            <p><em>Sep&nbsp;2023 &ndash; Nov&nbsp;2023, Indore, India</em></p>
-            <ul>
-                <li>Built RESTful APIs to improve data retrieval and system performance by 35%.</li>
-                <li>Applied machine learning algorithms to analyze user behaviour and boosted platform engagement by 25%.</li>
-                <li>Deployed scalable solutions on AWS, ensuring high system reliability and uptime.</li>
-                <li>Created interactive dashboards with Tableau and optimized backend processes using data-driven strategies.</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2025 Avanish Garg. All rights reserved.
-    </footer>
-
-    <script src="script.js"></script>
+  <header>
+    <div class="logo">Avanish</div>
+    <div class="menu-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Software Engineer Intern</h3>
+        <span>Parmar Academy — Jan 2024 – Dec 2024</span>
+        <p>Developed logistic regression and random forest models to predict student dropout risk with 80% accuracy, reducing attrition by 15%. Preprocessed large student datasets using Python and SQL, and integrated the model into the platform to enable proactive interventions.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Founder &amp; Blockchain Developer</h3>
+        <span>Rentora — 2023 – present</span>
+        <p>Founded and built a decentralized rental platform on Aptos blockchain. Designed and deployed smart contracts that enable secure, transparent rentals, improving processing speed and user trust. Managed all aspects of product development from architecture to testing.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Developer Intern</h3>
+        <span>Lifessentials — Sep 2023 – Nov 2023</span>
+        <p>Built RESTful APIs and optimized backend processes, improving performance by 35%. Applied machine learning algorithms to analyze user behavior and increase engagement by 25%. Deployed scalable solutions on AWS and created interactive dashboards for insights.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; <span id="year"></span> Avanish Garg. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

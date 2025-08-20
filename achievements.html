@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanish Garg | Achievements</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements — Avanish Garg</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-brand">Avanish Garg</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html" class="active">Achievements</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">&#9776;</div>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Achievements &amp; Leadership</h2>
-        <div class="card">
-            <h3>Leadership &amp; Community</h3>
-            <ul>
-                <li>Ex‑Secretary, <strong>Acropolis Blockchain Club</strong>: Ran Solidity and dApp sprints and launched 5+ peer tech cohorts.</li>
-                <li>Ex‑Secretary, <strong>CSI Acropolis</strong>: Led workshops on Data Structures &amp; Algorithms, Git, and backend development, growing the developer community by 40%.</li>
-                <li>Sponsorship &amp; Operations Lead for <strong>TEDx VijayNagar</strong>: Raised ₹1.5&nbsp;Lakh and managed event logistics end‑to‑end.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Hackathons &amp; Competitions</h3>
-            <ul>
-                <li>Led teams in 10+ hackathons including <strong>Unfold&nbsp;2024</strong> and <strong>E‑Yantra</strong>, securing wins at events such as <strong>AceHack</strong> and <strong>Civil&nbsp;War</strong>.</li>
-                <li>Finalist and winner in multiple technical and design competitions, blending creativity with problem solving under pressure.</li>
-                <li>Won awards in <strong>Nukkad Natak</strong> (street play) competitions by combining data‑driven narratives with impactful storytelling.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Academic &amp; Certifications</h3>
-            <ul>
-                <li>Two‑time <strong>Olympiad Gold Medalist</strong>, ranking in the top 2% nationwide.</li>
-                <li>Ongoing Machine Learning specialisation with courses from Cornell University and the University of Washington.</li>
-                <li>Selected for <strong>ACROSET&nbsp;2024</strong> (IEEE International Conference) as a technical team member.</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2025 Avanish Garg. All rights reserved.
-    </footer>
-
-    <script src="script.js"></script>
+  <header>
+    <div class="logo">Avanish</div>
+    <div class="menu-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Achievements</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Leadership &amp; Community</h3>
+        <p>Served as Secretary of CSI Acropolis and as founding Secretary of the Blockchain Club, conducting 5+ technical workshops and increasing membership significantly. Led sponsorship &amp; management for TEDx VijayNagar, raising funds 15% above target and coordinating a seamless event. Technical team member for ACROSET‑2024 (IEEE conference).</p>
+      </div>
+      <div class="card">
+        <h3>Hackathons &amp; Competitions</h3>
+        <p>Participated in and reached the finals of 10+ hackathons including Unfold 2024 and E‑yantra; clinched wins at AceHack and Civil War. Winner in Nukkad Natak competition and active street play performer using data‑driven social themes.</p>
+      </div>
+      <div class="card">
+        <h3>Academic &amp; Certifications</h3>
+        <p>Twice Olympiad gold medalist (top 2% nationally). Completing machine learning specializations from Cornell University and University of Washington. Completed NPTEL certifications in Cyber Security and Compiler Design. Constantly exploring new courses to expand technical horizon.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; <span id="year"></span> Avanish Garg. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
